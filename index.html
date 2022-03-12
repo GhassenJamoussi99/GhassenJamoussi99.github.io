@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <!-- Defining metadata for the HTML document -->
+  <meta charset="UTF-8">
+  <meta name="description" content="Lebenslauf">
+  <meta name="keywords" content="CV">
+  <meta name="author" content="Ghassen Jamoussi">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Title for the project -->
+  <title>Lebenslauf</title>
+
+  <!-- Social media Icons -->
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+  <!-- Bootstrap utilities -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+  <!-- Google Maps Utilities -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css">
+
+  <!-- Link my css file -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Css animations from w3 -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <!-- Css animations from UNPKG -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>
+
+<body>
+
+  <!-- ***************  Header ******************** -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="img/Bild.png" alt="Profile photo" class="rounded-pill">
+        <h1><a href="homepage.html">Ghassen Jamoussi</a></h1>
+        <div class="social-links text-center">
+          <a href="https://github.com/GhassenJamoussi99" target="_blank" class="github"><i
+              class="bx bxl-github"></i></a>
+          <a href="https://www.linkedin.com/in/ghassen-jamoussi-300852188/" target="_blank" class="linkedin"><i
+              class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="menu navbar">
+        <ul>
+          <li><a href="#home" class="nav-link scrollto active"><i class="bx bx-home"></i> Startseite</a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> Über mich</a></li>
+          <li><a href="#lebenslauf" class="nav-link scrollto"><i class="bx bx-file-blank"></i> Lebenslauf</a></li>
+          <li><a href="#projekte" class="nav-link scrollto"><i class="bx bx-book-content"></i> Projekte</a></li>
+          <li><a href="#kontakt" class="nav-link scrollto"><i class="bx bx-envelope"></i> Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- *************** End Header ***************** -->
+
+
+  <!-- ***************** Home Section ************* -->
+  <section id="home" class="home-style d-flex">
+    <div class="home-container">
+      <h1>Ghassen Jamoussi</h1>
+      <p>Ich bin <span class="typed" data-typed-items="Student, Hardware Entwickler, Software Entwickler"></span></p>
+    </div>
+  </section>
+  <!-- *************** End Home ******************* -->
+
+  <main id="main"> <!-- BEGIN -->
+  <!-- ***************** About Section ************* -->
+  <section id="about" class="about" data-aos="fade-up">
+    <div class="container">
+      <div class="title-style">
+        <h2>Über mich</h2>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-3" data-aos="fade-right">
+          <img src="img/main_img.png" class="img-fluid" alt="Profile photo">
+        </div>
+        <div class="col-sm-9 text-style">
+          <h3>Embedded Systems Developer</h3>
+          <p class="subtitle-style">
+            C/C++ and Python enthusiastic.
+          </p>
+
+          <div class="row">
+            <div class="col-sm-6">
+              <ul>
+                <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelor of Engineering</span>
+                </li>
+                <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Deutschland, Berlin</span></li>
+              </ul>
+            </div>
+            <div class="col-sm-6">
+              <ul>
+                <li><i class="bi bi-chevron-right"></i> <strong>E-mail:</strong> <span>s83006@bht-berlin.de</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+49 176 73540407</span></li>
+              </ul>
+            </div>
+          </div>
+          <br>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, harum aliquid nihil consequatur
+            quisquam ipsam, quod atque beatae itaque nulla iure, ea architecto eaque similique. Ad aperiam nisi
+            voluptatem a Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, harum aliquid nihil
+            consequatur
+            quisquam ipsam, quod atque beatae itaque nulla iure, ea architecto eaque similique. Ad aperiam nisi
+            voluptatem aLorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, harum aliquid nihil
+            consequatur</p>
+        </div>
+      </div>
+  </section>
+  <!-- *************** End About Section *********** -->
+
+  <!-- ***************** Skills subsection ************* -->
+  <section class="skills" data-aos="fade-right">
+    <div class="container">
+
+      <div class="title-style">
+        <h2>Skills</h2>
+      </div>
+
+      <div>
+        <p>Während meines Studiums habe ich viele Technologien und Programmiersprachen gelernt. Hier sind einige der
+          wichtigsten wichtigsten Dinge, die ich gelernt habe :</p>
+      </div>
+
+      <div class="row row-style" class="w3-container">
+
+        <div class="col-sm-6">
+
+          <div class="progress-style">
+            <h4>C/C++</h4>
+            <div class="w3-light-grey w3-round">
+              <div class="w3-container w3-blue w3-round" style="width:85%">85%</div>
+            </div>
+          </div>
+
+          <div class="progress-style">
+            <h4>Python</h4>
+            <div class="w3-light-grey w3-round">
+              <div class="w3-container w3-blue w3-round" style="width:80%">80%</div>
+            </div>
+          </div>
+
+          <div class="progress-style">
+            <h4>HTML/CSS/JS</h4>
+            <div class="w3-light-grey w3-round">
+              <div class="w3-container w3-blue w3-round" style="width:65%">65%</div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-sm-6">
+
+          <div class="progress-style">
+            <h4>QT</h4>
+            <div class="w3-light-grey w3-round">
+              <div class="w3-container w3-blue w3-round" style="width:75%">75%</div>
+            </div>
+          </div>
+
+          <div class="progress-style">
+            <h4>Git</h4>
+            <div class="w3-light-grey w3-round">
+              <div class="w3-container w3-blue w3-round" style="width:80%">80%</div>
+            </div>
+          </div>
+
+          <div class="progress-style">
+            <h4>Jira/Polarion</h4>
+            <div class="w3-light-grey w3-round">
+              <div class="w3-container w3-blue w3-round" style="width:90%">90%</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+  </section>
+  <!-- *************** End Skills subsection *********** -->
+
+  <!-- ***************** Languages subsection ************* -->
+  <section class="languages" data-aos="fade-left">
+    <div class="container">
+
+      <div class="title-style">
+        <h2>Sprachen</h2>
+      </div>
+
+      <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, nemo quo consequuntur libero laborum, sed
+          cumque reiciendis tenetur saepe mollitia doloremque id odio veritatis. Id officia quos maxime maiores quod.
+        </p>
+      </div>
+
+      <div class="row row-style" class="w3-container">
+
+        <div class="col-sm-6">
+
+          <div class="progress-style">
+            <h4>Französisch</h4>
+            <div class="w3-light-grey w3-round">
+              <div class="w3-container w3-green w3-round" style="width:99%">95%</div>
+            </div>
+          </div>
+
+          <div class="progress-style">
+            <h4>Englisch</h4>
+            <div class="w3-light-grey w3-round">
+              <div class="w3-container w3-green w3-round" style="width:85%">85%</div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-sm-6">
+
+          <div class="progress-style">
+            <h4>Arabisch</h4>
+            <div class="w3-light-grey w3-round">
+              <div class="w3-container w3-green w3-round" style="width:99%">99%</div>
+            </div>
+          </div>
+
+          <div class="progress-style">
+            <h4>Deutsch</h4>
+            <div class="w3-light-grey w3-round">
+              <div class="w3-container w3-green w3-round" style="width:85%">85%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- *************** End Languages subsection *********** -->
+
+  <!-- ***************** Lebenslauf section ************* -->
+  <section id="lebenslauf" class="lebenslauf" data-aos="fade-up">
+    <div class="container">
+
+      <div class="title-style">
+        <h2>Lebenslauf</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum quis, id accusamus nesciunt vitae nisi aliquam
+          repellat tenetur labore mollitia facilis molestias a at sit ipsa eligendi praesentium ex deleniti.
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum quis, id accusamus nesciunt vitae nisi aliquam
+          repellat tenetur labore mollitia facilis molestias a at sit ipsa eligendi praesentium ex deleniti.</p>
+      </div>
+
+      <div class="row" data-aos="fade-right">
+        <div class="col-lg-6">
+          <h3 class="lebenslauf-title">Education</h3>
+          <div class="lebenslauf-item">
+            <h4>Bachelor of Engineering Technische Informatik</h4>
+            <h5>2019 - </h5>
+            <p><em>Berliner Hochschule für Technik</em></p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum quis, id accusamus nesciunt vitae nisi
+              aliquam repellat tenetur labore mollitia facilis molestias a at sit ipsa eligendi praesentium ex deleniti.
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum quis, id accusamus nesciunt vitae nisi
+              aliquam repellat tenetur labore mollitia facilis molestias a at sit ipsa eligendi praesentium ex deleniti.
+            </p>
+          </div>
+          <div class="lebenslauf-item">
+            <h4>Abitur</h4>
+            <h5>2018</h5>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum quis, id accusamus nesciunt vitae nisi
+              aliquam repellat tenetur labore mollitia facilis molestias a at sit ipsa eligendi praesentium ex deleniti.
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum quis, id accusamus nesciunt vitae nisi
+              aliquam repellat tenetur labore mollitia facilis molestias a at sit ipsa eligendi praesentium ex deleniti.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h3 class="lebenslauf-title">Professional Experience</h3>
+          <div class="lebenslauf-item">
+            <h4>Praktikant Embedded Systems Entwickler</h4>
+            <h5>09/2021 - 3/2022</h5>
+            <p><em>Maschinenfabrik Reinhausen Gmbh, Berlin</em></p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum quis, id accusamus nesciunt vitae nisi
+              aliquam repellat tenetur labore mollitia facilis molestias a at sit ipsa eligendi praesentium ex deleniti.
+            </p>
+          </div>
+          <div class="lebenslauf-item">
+            <h4>Werkstudent Embedded Systems Entwickler</h4>
+            <h5>06/2021 - 9/2021</h5>
+            <p><em>Maschinenfabrik Reinhausen Gmbh, Berlin</em></p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum quis, id accusamus nesciunt vitae nisi
+              aliquam repellat tenetur labore mollitia facilis molestias a at sit ipsa eligendi praesentium ex deleniti.
+            </p>
+          </div>
+          <div class="lebenslauf-item">
+            <h4>Werkstudent Software QA</h4>
+            <h5>04/2020 - 06/2021</h5>
+            <p><em>Lautsprecher Teufel Gmbh, Berlin</em></p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum quis, id accusamus nesciunt vitae nisi
+              aliquam repellat tenetur labore mollitia facilis molestias a at sit ipsa eligendi praesentium ex deleniti.
+            </p>
+          </div>
+          <div class="lebenslauf-item">
+            <h4>Private Tutor</h4>
+            <h5>09/2019 - 04/2020</h5>
+            <p><em>Selbständig</em></p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum quis, id accusamus nesciunt vitae nisi
+              aliquam repellat tenetur labore mollitia facilis molestias a at sit ipsa eligendi praesentium ex deleniti.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- *************** End Lebenslauf subsection *********** -->
+
+  <!-- ***************** Projekte section ************* -->
+  <section id="projekte" class="projekte" data-aos="fade-up">
+    <div class="container">
+
+      <div class="title-style">
+        <h2>Projekte</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor maiores nisi vel vitae itaque saepe eum,
+          autem, aliquam atque dolore nihil asperiores illum, at odio impedit ipsam hic ea nobis.</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="img-container">
+            <img src="img/projects/Corona_Robot.png" class="img-style" alt="Corona Robot project">
+            <div class="img-details">
+              <a href="projekt_1.html">
+                <div class="details-text">Click for more details</div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="img-container">
+            <img src="img/projects/smart_home_qt.png" class="img-style" alt="Smart home project">
+            <div class="img-details">
+              <a href="projekt_2.html">
+                <div class="details-text">Click for more details</div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="img-container">
+            <img src="img/projects/Tetris_Game.png" class="img-style" alt="simple tetris game">
+            <div class="img-details">
+              <a href="projekt_3.html">
+                <div class="details-text">Click for more details</div>
+              </a>
+            </div>
+          </div>
+        </div>
+       </br>
+        <div class="col-lg-4">
+          <div class="img-container">
+            <img src="img/projects/Old-Project-Upgrade-0.png" class="img-style" alt="Corona Robot project">
+            <div class="img-details">
+              <a href="projekt_4.html">
+                <div class="details-text">Click for more details</div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="img-container">
+            <img src="img/projects/tic_tac_toe.png" class="img-style" alt="Smart home project">
+            <div class="img-details">
+              <a href="projekt_5.html">
+                <div class="details-text">Click for more details</div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- *************** End Projekte subsection *********** -->
+
+
+  <!-- *************** Begin Referenzen *********** -->
+  <section id="referenzen" class="referenzen" data-aos="fade-up">
+    <div class="container">
+
+      <div class="title-style">
+        <h2>Referenzen</h2>
+      </div>
+
+      <div class="row">
+
+        <div class="col-lg-4">
+          <figure class="ref-style">
+            <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro tenetur, quas, delectus enim qui
+              eos odit in mollitia,
+              sequi cumque dolore soluta odio ad culpa? Repellendus eum et optio ipsa!
+            </blockquote>
+            <img src="img/referenzen/profile-1.jpg" alt="img-1"/>
+            <div class="author">
+              <h5>Cristiano Ronaldo <span>- Software Developer</span></h5>
+            </div>
+          </figure>
+        </div>
+
+        <div class="col-lg-4">
+          <figure class="ref-style">
+            <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro tenetur, quas, delectus enim qui
+              eos odit in mollitia,
+              sequi cumque dolore soluta odio ad culpa? Repellendus eum et optio ipsa!
+            </blockquote>
+            <img src="img/referenzen/profile-2.jpg" alt="img-2" />
+            <div class="author">
+              <h5>Lionel Messi<span>- Embedded Systems Engineer</span></h5>
+            </div>
+          </figure>
+        </div>
+
+        <div class="col-lg-4">
+          <figure class="ref-style">
+            <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro tenetur, quas, delectus enim qui
+              eos odit in mollitia,
+              sequi cumque dolore soluta odio ad culpa? Repellendus eum et optio ipsa!
+            </blockquote>
+            <img src="img/referenzen/profile-3.png" alt="img-3" />
+            <div class="author">
+              <h5>Kylian Mbappe<span>- UX/UI Designer</span></h5>
+            </div>
+          </figure>
+        </div>
+
+      </div>
+  </section>
+  <!-- *************** End Referenzen   *********** -->
+
+  <!-- *************** Begin Kontakt subsection *********** -->
+  <section id="kontakt" class="kontakt" data-aos="fade-up">
+    <div class="container">
+
+      <div class="title-style">
+        <h2>Kontakt</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut labore reprehenderit quaerat nostrum? Eligendi
+          laboriosam, nam quis possimus enim ad odio molestias ipsam molestiae cumque commodi iste dolores aspernatur
+          provident.</p>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6" data-aos="fade-left" data-aos-delay="500">
+          <div class="text-center" onclick="setup_map()"><button>Entfernung zur Universität bestimmen</button></div>
+          </br>
+          <p>
+            Ihr Breitengrad: <span id="latitude"></span>&deg;
+            ,Ihr Längengrad: <span id="longitude"></span>&deg;
+            (auf <span id="accuracy"></span> m genau)<br />
+            Entfernung zur Beuth-Hochschule: <span id="distance"></span> km<br />
+          <div id="mymap" style="width:400px; height:400px"></div>
+          </p>
+        </div>
+
+        <div class="kontakt-box col-sm-6" data-aos="fade-right">
+          <form>
+            <div class="row">
+              <div class="form-group col-md-6">
+                <label for="name">Your Name</label>
+                <input type="text" name="name" class="form-control">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="name">Your Email</label>
+                <input type="email" class="form-control" name="email">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="name">Subject</label>
+              <input type="text" class="form-control" name="subject">
+            </div>
+            <div class="form-group">
+              <label for="name">Message</label>
+              <textarea class="form-control" name="message" rows="9"></textarea>
+            </div>
+            <div class="text-center"><button>Send Message</button></div>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- *************** End Kontakt subsection *********** -->
+  <main id="main"> <!-- END -->
+
+
+  <!-- Libraries -->
+  <script src="libs/typed.js/typed.min.js"></script> <!-- typed.js for typing animations library -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!-- aos.js for animations library -->
+  <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script> <!-- Google Maps Utilities -->
+
+  <!-- main.js -->
+  <script src="js/main.js"></script>
+
+</body>

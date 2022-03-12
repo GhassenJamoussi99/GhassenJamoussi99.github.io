@@ -1,0 +1,587 @@
+/********************* General Styles ************************/
+
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #272829;
+}
+
+a {
+    color: #f8f8f8;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #37b3ed;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Raleway", sans-serif;
+}
+
+.title-style h2 {
+    font-size: 30px;
+    font-weight: 610;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    position: relative;
+    color: #173b6c;
+}
+
+/********************* Header ************************/
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 350px;
+    transition: all ease-in-out 0.5s;
+    background: #071322;
+    z-index: 1000;
+    /*I wrote a big number here to make sure that it is 
+                        on top of any stack in the webpage*/
+}
+
+#header .profile img {
+    margin: 15px auto;
+    display: block;
+    width: 120px;
+    border: 8px solid #2c2f3f;
+}
+
+#header .profile h1 {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    -moz-text-align-last: center;
+    text-align-last: center;
+    font-family: "Poppins", sans-serif;
+}
+
+#header .profile h1 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#header .profile h1 a:hover {
+    color: rgb(15, 177, 251);
+    text-decoration: none;
+}
+
+#header .profile .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #212431;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    margin-top: 10px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+}
+
+#header .profile .social-links a:hover {
+    background: #ff3300;
+    color: #fff;
+    text-decoration: none;
+}
+
+#main {
+    margin-left: 350px;
+}
+
+
+/********************* Navigation Menu ************************/
+
+.menu {
+    padding: 30px 0 0 0;
+}
+
+.menu * {
+    margin: 5px;
+    padding: 0;
+    list-style: none;
+}
+
+.menu>ul>li {
+    position: relative;
+    white-space: nowrap;
+}
+
+.menu a,
+.menu a:focus {
+    display: flex;
+    align-items: center;
+    color: #a8a9b4;
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+.menu a i,
+.menu a:focus i {
+    font-size: 24px;
+    padding-right: 8px;
+    color: #6f7180;
+}
+
+.menu a:hover,
+.menu .active,
+.menu .active:focus,
+.menu li:hover>a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu a:hover i,
+.menu .active i,
+.menu .active:focus i,
+.menu li:hover>a i {
+    color: #149ddd;
+}
+
+/********************* Home Section ************************/
+
+#home {
+    width: 100%;
+    height: 100vh;
+    background: url("../img/background_image.jpg") top center;
+    background-size: cover;
+}
+
+#home:before {
+    content: "";
+    background: rgba(5, 13, 24, 0.3);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#home .home-container {
+    position: relative;
+    z-index: 2;
+    min-width: 300px;
+}
+
+#home h1 {
+    margin: 0 0 10px 0;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #fff;
+}
+
+.home-style {
+    justify-content: center;
+    align-items: center;
+}
+
+#home p {
+    color: #fff;
+    margin-bottom: 50px;
+    font-size: 26px;
+    font-family: "Poppins", sans-serif;
+}
+
+#home p span {
+    color: #fff;
+    padding-bottom: 4px;
+    letter-spacing: 1px;
+    border-bottom: 3px solid #149ddd;
+}
+
+/********************* About Section ************************/
+
+.about {
+    margin-bottom: 60px;
+}
+
+.about .text-style h3 {
+    font-weight: 500;
+    font-size: 26px;
+    color: #173b6c;
+}
+
+.about .text-style li {
+    list-style: none;
+}
+
+.about .text-style ul i {
+    font-size: 17px;
+    margin-right: 5px;
+    color: #149ddd;
+}
+
+.about .subtitle-style {
+    font-style: italic;
+    color: #6f7180;
+    font-weight: 400;
+}
+
+.title-style {
+    padding-bottom: 30px;
+}
+
+/********************* Skills subsection ************************/
+
+.skills {
+    background-color: #19b7db09;
+    padding-bottom: 40px;
+}
+
+.skills h4 {
+    font-size: 17px;
+    font-weight: 410;
+    color: #6f7180;
+}
+
+.skills .progress-style {
+    padding: 5px;
+}
+
+/********************* Sprachen subsection ************************/
+
+.languages {
+    padding-bottom: 40px;
+}
+
+.languages h4 {
+    font-size: 17px;
+    font-weight: 410;
+    color: #6f7180;
+}
+
+.languages .progress-style {
+    padding: 5px;
+}
+
+/********************* Lebenslauf subsection ************************/
+
+.lebenslauf {
+    background-color: #19b7db09;
+}
+
+.lebenslauf .lebenslauf-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #050d18;
+}
+
+.lebenslauf .lebenslauf-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #1f5297;
+    position: relative;
+}
+
+.lebenslauf .lebenslauf-item h4 {
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #050d18;
+    margin-bottom: 10px;
+}
+
+.lebenslauf .lebenslauf-item h5 {
+    font-size: 16px;
+    background: #e4edf9;
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.lebenslauf .lebenslauf-item ul {
+    padding-left: 20px;
+}
+
+.lebenslauf .lebenslauf-item ul li {
+    padding-bottom: 10px;
+}
+
+.lebenslauf .lebenslauf-item:last-child {
+    padding-bottom: 0;
+}
+
+.lebenslauf .lebenslauf-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #fff;
+    border: 2px solid #1f5297;
+}
+
+/********************* Projekte subsection ************************/
+
+.projekte {
+    padding-bottom: 30px;
+}
+
+.img-container {
+    position: relative;
+    padding: 20px;
+    width: 100%;
+}
+
+.img-style {
+    opacity: 1;
+    display: block;
+    width: 400px;
+    height: 300px;
+    transition: .5s ease;
+    padding-right: 40px;
+    backface-visibility: hidden;
+}
+
+.img-details {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.img-container:hover .img-style {
+    opacity: 0.3;
+}
+
+.img-container:hover .img-details {
+    opacity: 1;
+}
+
+.details-text {
+    background-color: #959595;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+    margin-left: 40px;
+}
+
+/********************* Referenzen subsection ************************/
+.referenzen {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background-color: #19b7db09;
+}
+
+figure.ref-style {
+    font-family: 'Raleway', Arial, sans-serif;
+    overflow: hidden;
+    margin: 10px;
+    max-width: 310px;
+    width: 100%;
+    color: #333;
+    text-align: left;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+
+figure.ref-style img {
+    width: 330px;
+    height: 200px;
+}
+
+figure.ref-style blockquote {
+    position: relative;
+    background-color: #ffffff;
+    padding: 25px 50px 25px 50px;
+    font-size: 0.8em;
+    font-weight: 500;
+    text-align: left;
+    margin: 0;
+    line-height: 1.6em;
+    font-style: italic;
+}
+
+figure.ref-style blockquote:before,
+figure.ref-style blockquote:after {
+    font-family: 'FontAwesome';
+    content: "\201C";
+    position: absolute;
+    font-size: 50px;
+    opacity: 0.3;
+    font-style: normal;
+}
+
+figure.ref-style blockquote:before {
+    top: 25px;
+    left: 20px;
+}
+
+figure.ref-style blockquote:after {
+    content: "\201D";
+    right: 20px;
+    bottom: 0;
+}
+
+figure.ref-style .author {
+    bottom: 0;
+    width: 100%;
+    padding: 5px 25px;
+    color: #000000;
+    background-color: #ffffff;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+figure.ref-style .author h5 {
+    opacity: 0.8;
+    margin: 0;
+    font-weight: 800;
+}
+
+figure.ref-style .author h5 span {
+    font-weight: 400;
+    text-transform: none;
+    padding-left: 5px;
+}
+
+/********************* Kontakt subsection ************************/
+
+.kontakt {
+    padding-top: 20px;
+}
+
+.kontakt-box {
+    padding: 30px;
+    background: #fff;
+    width: 50%;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+
+.kontakt-img {
+    width: 100%;
+    padding-top: 50px;
+}
+
+.kontakt button {
+    background: #149ddd;
+    border: 0;
+    padding: 10px 24px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 4px;
+}
+
+.kontakt button:hover {
+    background: #37b3ed;
+}
+
+/********************* Projektdetails ************************/
+
+.projekt-details {
+    padding-left: 50px;
+    margin-left: 300px;
+}
+
+.projekt-info {
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 5px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.12);
+}
+
+.projekt-details .img-style {
+    width: 770px;
+    height: 600px;
+}
+
+.vid-style {
+    opacity: 1;
+    width: 400px;
+    height: 300px;
+    padding-right: 40px;
+}
+
+/********************* Image Gallery style ************************/
+
+/********************* Tic-Tac-Toe Game ************************/
+
+.projekt-details #common-gamestyle {
+    text-align: center;
+    background-color: #000000;
+}
+
+.projekt-details button {
+    background: #149ddd;
+    border: 0;
+    padding: 10px 24px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 4px;
+}
+
+.projekt-details button:hover {
+    background: #37b3ed;
+}
+
+.projekt-details #game {
+    margin: auto;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 300px;
+}
+
+.projekt-details .grid-item {
+    border: 2px solid rgb(7, 146, 200);
+    height: 100px;
+    line-height: 100px;
+    font-size: 60px;
+    color: #c6e2ff;
+    animation: neon .08s ease-in-out infinite alternate;
+}
+
+/*Color animation from https://codepen.io/markheggan/pen/LjrVYN*/
+@keyframes neon {
+    from {
+        text-shadow:
+            0 0 6px rgba(202, 228, 225, 0.92),
+            0 0 30px rgba(202, 228, 225, 0.34),
+            0 0 12px rgba(30, 132, 242, 0.52),
+            0 0 21px rgba(30, 132, 242, 0.92),
+            0 0 34px rgba(30, 132, 242, 0.78),
+            0 0 54px rgba(30, 132, 242, 0.92);
+    }
+
+    to {
+        text-shadow:
+            0 0 6px rgba(202, 228, 225, 0.98),
+            0 0 30px rgba(202, 228, 225, 0.42),
+            0 0 12px rgba(30, 132, 242, 0.58),
+            0 0 22px rgba(30, 132, 242, 0.84),
+            0 0 38px rgba(30, 132, 242, 0.88),
+            0 0 60px rgba(30, 132, 242, 1);
+    }
+}
+
+.projekt-details #text-status {
+    color: white;
+    text-align: center;
+}

@@ -1,0 +1,64 @@
+Sources used for the Web Project
+    This page is used for writing notes ; Sources used and the knowledge I gained while doing the project
+https://www.w3schools.com/bootstrap4/bootstrap_flex.asp 
+https://boxicons.com/usage 
+https://mattboldt.com/demos/typed-js/ https://github.com/mattboldt/typed.js/
+
+  Erkentnissgewinn : Generell 
+  - target="_blank" open in a new window
+  - z-index in css : An element with greater stack order is always in front of an element with a lower stack order.
+  - The CSS overflow property controls what happens to content that is too big to fit into an area.
+    overflow:hidden prevents scrollbars from showing up, even when they're necessary.
+  - Get Height and Width of Web Page : document.body.offsetWidth and document.body.offsetHeight
+  - https://stackoverflow.com/questions/21952994/ways-to-change-margin-by-screen-size
+    @media all and (max-width: 1700px) and (min-width: 1300px) {
+    .about {
+     margin-left: 25%;
+    }
+  - Positions : Elements are then positioned using the top, bottom, left,
+     and right properties. However, these properties will not work
+     unless the position property is set first.
+     They also work differently depending on the position value.
+    - static:   An element with position: static; is not positioned in any special way;
+                it is always positioned according to the normal flow of the
+    
+    - relative: An element with position: relative; is positioned relative to its normal position.
+                Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. 
+                Other content will not be adjusted to fit into any gap left by the element.
+
+    - fixed:  An element with position: fixed; is positioned relative to the viewport,
+              which means it always stays in the same place even if the page is scrolled. 
+              The top, right, bottom, and left properties are used to position the element.
+
+    - absolute: An element with position: absolute; is positioned relative to the nearest 
+                positioned ancestor (instead of positioned relative to the viewport, like fixed).
+
+    - sticky: An element with position: sticky; is positioned based on the user's scroll position.
+
+
+    display: none; is commonly used with JavaScript to hide and show elements without deleting and recreating them
+
+    display:block; The following example displays <a> elements as block elements:
+        <a href="/html/default.asp" target="_blank">HTML</a>
+        <a href="/css/default.asp" target="_blank">CSS</a>
+        <a href="/js/default.asp" target="_blank">JavaScript</a>
+
+
+    - https://alvarotrigo.com/blog/css-animations-scroll/ : For animations
+    - https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_opacity : Learn how to hover an image
+
+
+   Erkentnissgewinn : Bootstrap
+  <p class="text-center">Center aligned text on all viewport sizes.</p>
+  nav-link for navigation but need to understand it more
+  Bootstrap Grid : In total of 12 columns
+
+  Form controls
+  Give textual form controls like <input>s and <textarea>s an upgrade with custom styles, sizing, focus states, and more.
+
+  img-fluid
+   Images come in all sizes. So do screens. Responsive images automatically adjust to fit the size of the screen.
+   Create responsive images by adding an .img-fluid class to the <img> tag. The image will then scale nicely to the parent element.
+
+id : unique
+classes : common and can be used multiple times
