@@ -4,6 +4,9 @@ https://www.w3schools.com/bootstrap4/bootstrap_flex.asp
 https://boxicons.com/usage 
 https://mattboldt.com/demos/typed-js/ https://github.com/mattboldt/typed.js/
 
+  id : unique
+  classes : common and can be used multiple times
+
   Erkentnissgewinn : Generell 
   - target="_blank" open in a new window
   - z-index in css : An element with greater stack order is always in front of an element with a lower stack order.
@@ -60,5 +63,26 @@ https://mattboldt.com/demos/typed-js/ https://github.com/mattboldt/typed.js/
    Images come in all sizes. So do screens. Responsive images automatically adjust to fit the size of the screen.
    Create responsive images by adding an .img-fluid class to the <img> tag. The image will then scale nicely to the parent element.
 
-id : unique
-classes : common and can be used multiple times
+
+
+javascript : 
+Scoping rules
+The main difference is scoping rules. Variables declared by var keyword are scoped to the immediate function body (hence the function scope) while let variables are scoped to the immediate enclosing block denoted by { } (hence the block scope).
+
+function run() {
+  var foo = "Foo";
+  let bar = "Bar";
+
+  console.log(foo, bar); // Foo Bar
+
+  {
+    var moo = "Mooo"
+    let baz = "Bazz";
+    console.log(moo, baz); // Mooo Bazz
+  }
+
+  console.log(moo); // Mooo
+  console.log(baz); // ReferenceError
+}
+
+run();

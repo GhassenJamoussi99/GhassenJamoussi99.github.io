@@ -12,8 +12,6 @@
     animatedClassName: 'animated',
   });
 
-
-  /************ Url: https://github.com/mattboldt/typed.js  ***************/
   // Selector function
   const select = (el, all = false) => {
     el = el.trim()
@@ -23,22 +21,6 @@
       return document.querySelector(el)
     }
   }
-
-  // Home type effect
-  const typed = select('.typed')
-  if (typed) {
-    let typed_strings = typed.getAttribute('data-typed-items')
-    typed_strings = typed_strings.split(',')
-    new Typed('.typed', {
-      strings: typed_strings,
-      loop: true,
-      typeSpeed: 100,
-      backSpeed: 50,
-      backDelay: 2000
-    });
-  }
-  /**************************************************************************/
-
 })()
 
 //https://stackoverflow.com/questions/13840516/how-to-find-my-distance-to-a-known-location-in-javascript
@@ -114,16 +96,17 @@ function currentDiv(n) {
 
 function showDivs(n) {
   var i;
-  var x = document.getElementsByClassName("mySlides");
+  var x = document.getElementsByClassName("Slides-V1");
   var dots = document.getElementsByClassName("demo");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
+  if (n > x.length) { slideIndex = 1 }
+  if (n < 1) { slideIndex = x.length }
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
   }
-  x[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " w3-opacity-off";
+  x[slideIndex - 1].style.display = "block";
+  console.log(dots[slideIndex - 1].className);
+  dots[slideIndex - 1].className += " w3-opacity-off";
 }
