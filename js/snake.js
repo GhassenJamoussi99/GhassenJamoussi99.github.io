@@ -26,7 +26,7 @@ class Snake {
 
     /**
      * checks if the snake ate the food
-     * @returns true if the snake and the food are too 3 px close to each other
+     * @returns true if the snake and the food are 3 px close to each other
      */
     eat() {
 
