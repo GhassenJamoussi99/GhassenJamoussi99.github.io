@@ -8,4 +8,4 @@
  
 ## Usage:
      Clone the project and open index.html
-     To check out the website you can go to https://ghassenjamoussi99.github.io/
+     To check out the website you can also go to https://ghassenjamoussi99.github.io/
